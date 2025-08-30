@@ -10,31 +10,37 @@ export default function Page() {
   const [location, setLocation] = useState<Location.LocationObject | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
+  // Request permissions (foreground + background)
   const requestPermission = async () => {
-    const { status } = await Location.requestForegroundPermissionsAsync();
-    const { status: bgStatus } =
-      Platform.OS === "android"
-        ? await Location.requestBackgroundPermissionsAsync()
-        : { status: "granted" };
+    try {
+      const { status } = await Location.requestForegroundPermissionsAsync();
+      let bgStatus = "granted";
 
-    if (status === "granted" && bgStatus === "granted") {
-      setHasPermission(true);
-      startBackgroundLocation();
-    } else {
-      setHasPermission(false);
-      setErrorMsg("Permission denied!");
+      if (Platform.OS === "android") {
+        const bg = await Location.requestBackgroundPermissionsAsync();
+        bgStatus = bg.status;
+      }
+
+      if (status === "granted" && bgStatus === "granted") {
+        setHasPermission(true);
+        startBackgroundLocation();
+      } else {
+        setHasPermission(false);
+        setErrorMsg("Permission denied!");
+      }
+    } catch (error) {
+      console.error(error);
+      setErrorMsg("Error requesting permissions");
     }
   };
 
+  // Start background location tracking
   const startBackgroundLocation = async () => {
-    const hasStarted = await Location.hasStartedLocationUpdatesAsync(
-      LOCATION_TASK_NAME
-    );
-    if (!hasStarted) {
+    try {
       await Location.startLocationUpdatesAsync(LOCATION_TASK_NAME, {
         accuracy: Location.Accuracy.Highest,
-        timeInterval: 1000, // update every 1 second
-        distanceInterval: 1, // update every 1 meter
+        timeInterval: 1000,
+        distanceInterval: 1,
         foregroundService: {
           notificationTitle: "Karen For Good",
           notificationBody: "Tracking your location in background",
@@ -42,20 +48,30 @@ export default function Page() {
         },
         pausesUpdatesAutomatically: false,
       });
+    } catch (error) {
+      console.error("Failed to start background location:", error);
     }
   };
 
+  // Subscribe to foreground updates to show on screen
   useEffect(() => {
-    // Subscribe to foreground updates to show in UI
-    const subscription = Location.watchPositionAsync(
-      { accuracy: Location.Accuracy.Highest, distanceInterval: 1 },
-      (loc) => setLocation(loc)
-    );
+    let subscription: Location.LocationSubscription;
+
+    const subscribe = async () => {
+      subscription = await Location.watchPositionAsync(
+        { accuracy: Location.Accuracy.Highest, distanceInterval: 1 },
+        (loc) => setLocation(loc)
+      );
+    };
+
+    if (hasPermission) {
+      subscribe();
+    }
 
     return () => {
-      subscription.then((sub) => sub.remove());
+      if (subscription) subscription.remove();
     };
-  }, []);
+  }, [hasPermission]);
 
   return (
     <View style={styles.container}>
@@ -99,14 +115,18 @@ const styles = StyleSheet.create({
   },
 });
 
-// Task Manager for background updates
+// Background task
 TaskManager.defineTask(LOCATION_TASK_NAME, ({ data, error }) => {
   if (error) {
-    console.error(error);
+    console.error("Background location task error:", error);
     return;
   }
   if (data) {
     const { locations } = data as any;
-    console.log("Background location:", locations[0].coords);
+    const loc = locations[0];
+    console.log(
+      `Background location: Lat ${loc.coords.latitude}, Lon ${loc.coords.longitude}`
+    );
+    // Optional: send location to server or store locally
   }
 });
