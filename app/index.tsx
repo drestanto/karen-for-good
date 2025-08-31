@@ -258,7 +258,10 @@ TaskManager.defineTask(LOCATION_TASK_NAME, async ({ data, error }) => {
         const randomIndex = Math.floor(Math.random() * notifications.length);
         const notif = notifications[randomIndex];
         Notifications.scheduleNotificationAsync({
-          content: { title: notif.title, body: notif.body },
+          content: { 
+            title: notif.title, 
+            body: `${notif.body}\n\nConsume responsibly please` 
+          },
           trigger: null,
         });
       }

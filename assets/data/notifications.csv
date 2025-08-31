@@ -1,101 +1,201 @@
 area_id;title;body
-1;"Grocery Haul Alert";"Do you REALLY need four bags of chips and a carton of ice cream? No. Put it back."
-1;"Your Shopping Cart Is a Mess";"That cart is a monument to consumerism. Do better for the planet, and for your waistline."
-1;"Bulk Buying, Seriously?";"Oh, you're getting the family-sized cereal. Is your 'family' just you on the couch?"
-1;"Another Plastic Bag?";"I can SEE you have reusable bags in your car. Stop being lazy and save the turtles."
-1;"Healthy Choices, Please";"That's not produce; it's a bunch of processed junk. I’m judging you for your lack of self-control."
-1;"Is That On Sale?";"Just because it's on special doesn't mean you need it. You're falling for a marketing trap."
-1;"Impulse Buy Warning";"That chocolate bar at the checkout is a test. You are failing miserably."
-1;"Frozen Food Aisle";"Real food comes from the ground, not a freezer. Did your mother not teach you how to cook?"
-1;"Look at Your Basket";"That basket is a disgrace. Think about where all that unnecessary stuff will end up: the landfill."
-1;"Expensive Water Bottle";"Why are you buying a $5 imported water bottle? Tap water is FREE. Wake up, sheeple."
-1;"Are You a Hoarder?";"Your cart looks like you're preparing for the apocalypse. Stop hoarding things you don't need."
-1;"Don't Be a Food Waster";"You're buying more food than you can possibly eat before it expires. That's a sin."
-1;"Check Your Labels!";"Can you even pronounce the ingredients on that snack? I bet you can't."
-1;"Shopping for One?";"That family-sized pizza for one is a cry for help. I'm just saying."
-1;"The Self-Checkout Is Judging You";"The machine knows you're buying too much junk. We all do."
-1;"More Stuff, More Problems";"The less you buy, the less you have to clean. It's a simple life hack you clearly haven't learned."
-1;"Put Down That Soda";"Do you even know how much sugar is in that drink? It's literally poison."
-1;"You Don't Need All That";"Take a look around. Everyone else is buying normal things. What's wrong with you?"
-1;"What Would Your Mom Say?";"Your mother would be so disappointed with the junk food in your cart."
-1;"Another Shopping Trip?";"You were just here yesterday. Do you not have anything better to do with your life?"
-2;"So Trendy, So Wasteful";"You're paying ten times the price for 'artisanal' carrots. It's just a root vegetable."
-2;"Is That Ethical?";"That expensive, handcrafted soap comes in a fancy paper bag. How much waste did it take to make that?"
-2;"Stop Gentrifying the Market";"Don't ruin this place with your fancy tote bags and your organic kombucha."
-2;"Look at Me, I Shop Local";"Shopping 'local' is just an excuse to overspend on things you don't need."
-2;"Is That a $20 Loaf of Bread?";"A fool and their money are soon parted. Enjoy your overpriced carbs."
-2;"Don't Block the Aisle";"You and your friends are blocking the path with your endless chatter. Some of us have things to do."
-2;"The "Organic" Lie";"Do you really think that 'organic' kale is worth the price? It's a marketing scam."
-2;"You Call This a Bargain?";"You're bragging about getting a 'deal' on a $50 spice jar. That's not a deal."
-2;"Are You a Tourist?";"I can tell you're not from around here. You're taking pictures of vegetables, for goodness sake."
-2;"More Is Not Better";"Stop sampling everything. Just buy the cheese and get out of the way."
-2;"The Pomegranate Problem";"You don't know how to eat that, do you? Just put it down and walk away."
-2;"Don't Be So Picky";"You're squeezing every tomato. Just pick one and move on. You're ruining them for everyone else."
-2;"That Reusable Bag Has Holes";"I can see the crumbs coming out of your tote bag. That's not hygienic."
-2;"Is Your Life a Social Media Post?";"You're just here to take photos for your Instagram, aren't you? It's pathetic."
-2;"The Juice is Not Worth the Squeeze";"You're spending an hour picking out produce. It's not a religious pilgrimage."
-2;"Put Down the Phone";"The farmers' market is about community, not swiping through your phone."
-2;"The 'Karen' of Markets";"Oh, you're the type to complain that the free-range eggs aren't free-ranging enough."
-2;"Is Your 'Artisan' Baguette Even Good?";"You're paying for the story, not the flavor. I can tell."
-2;"Buying Flowers You'll Let Die";"You're buying those flowers just to let them wilt in a vase. It's a waste of life."
-2;"Are You Getting Lost?";"You've walked past the same stall three times. Just buy something or leave."
-3;"Another Drill?";"You already have a drill at home. You just want the new one with the bigger battery, don't you?"
-3;"DIY Disaster in Progress";"That new saw is not going to make you a better carpenter. It's just going to sit in your garage."
-3;"Bunnings Is Not a Playground";"You're letting your kids run wild. This is a hardware store, not a daycare center."
-3;"What Is That for?";"You don't even know what that tool does. You're just buying it because it looks cool."
-3;"Don't Start a Project You Won't Finish";"That's a lot of lumber for a bookshelf you'll never actually build."
-3;"Stop Looking, Start Working";"You're just here to browse, aren't you? Go home and finish your project from last year."
-3;"The 'Karen' of Power Tools";"Oh, you're the one who needs the manager because the 'limited edition' hammer isn't limited enough."
-3;"Your Shed Is Full of Junk";"That new lawnmower is just going to join the graveyard of forgotten tools in your shed."
-3;"Are You an Electrician?";"That new multimeter is not going to magically make you one. Leave it to the professionals."
-3;"Stop Wasting Paint";"You don't need five different shades of white. You're just wasting money and resources."
-3;"Another Unfinished Project?";"That new workbench is just going to be another flat surface for you to put more junk on."
-3;"Put Down That Expensive Tool";"You're not even a professional. That expensive tool is wasted on you."
-3;"You Don't Need It";"That's a lot of screws for a project you don't have. Put them back."
-3;"Why Are You So Loud?";"Stop talking so loudly on your phone. Some of us are trying to shop."
-3;"Return That, You Won't Use It";"You know you're just going to return that in a week, right?"
-3;"Is Your Life Just Projects?";"It seems like you have a new project every weekend. Just relax and enjoy your life."
-3;"The 'DIY' Lie";"You're not doing it yourself. You're just buying all the parts and paying someone else to assemble them."
-3;"The 'Karen' of Home Improvement";"You're the type of person to complain that the lumber isn't straight enough for your 'masterpiece'."
-3;"Your Cart is a Disaster";"That cart is overflowing with things you don't need. Stop hoarding."
-3;"More Stuff, More Problems";"Every new item you buy is another thing you have to find a place for in your cluttered home."
-4;"McD sounds delicious? No!";"DON'T EAT TOO MUCH FAST FOOD. IT'LL KILL YOU!!!!! Or, you want to die, then it's up to you."
-4;"Your Burger is a Time Bomb";"That burger is full of saturated fat and chemicals. It's literally a time bomb for your health."
-4;"Another Soda?";"You're just drinking liquid sugar. It's disgusting and unhealthy."
-4;"Why Are You in a Drive-Thru?";"You're sitting in a car to get food you'll eat in a car. Get out and walk somewhere."
-4;"Don't Bring Your Kids Here";"You're setting a terrible example for your children by feeding them this garbage."
-4;"You Call This a Meal?";"A bag of fried potatoes is not a meal. It's a tragedy."
-4;"I See You, Fast Food Addict";"I can see the regret in your eyes. It's not too late to turn back."
-4;"Stop Wasting Your Money";"You're spending your hard-earned cash on food that will make you sick. Is it worth it?"
-4;"That's Not Real Food";"This isn't a kitchen. It's a science lab for creating addictive, unhealthy 'food'."
-4;"The 'Karen' of Fast Food";"Oh, you're the one who asks for no pickles and then complains about the lettuce."
-4;"Your Body Is a Temple";"Your body is a temple, and you're treating it like a garbage dump."
-4;"What a Disgrace";"You're sitting there eating this junk. It's a disgrace to healthy living."
-4;"Don't Do It";"Put down that greasy burger. It's not going to make you happy."
-4;"Are You a Real Human?";"You're eating a meal that's been made in two minutes. How is that even possible?"
-4;"You'll Regret This Later";"You'll feel guilty about this meal later. Don't do it to yourself."
-4;"Think About Your Heart";"Every bite of that is another step closer to a heart attack."
-4;"Fast Food Is a Scam";"They're selling you cheap calories and pretending it's a real meal. Don't fall for it."
-4;"Don't Be a Sheep";"Everyone is eating this garbage. Don't be a sheep. Be better."
-4;"Another Drive-Thru?";"You were just here yesterday. Are you addicted?"
-4;"This is Not a Treat";"This isn't a treat. This is a punishment for your body."
-5;"Don't Buy That, It's Ugly";"That fast fashion shirt is going to fall apart in one wash. Put it back."
-5;"You Can't Afford That";"I can see you looking at the price tag. You can't afford that, and you know it."
-5;"Stop, You're Not an Influencer";"You're taking pictures of clothes you can't afford. Stop pretending."
-5;"The 'Karen' of Shopping";"Oh, you're the one who needs to 'speak to a manager' because the sale price isn't low enough."
-5;"More Debt, More Problems";"Every item you buy is just another step toward debt. Think about your financial future."
-5;"Do You Need More Shoes?";"You have ten pairs of shoes at home. Put those back. You're a hoarder."
-5;"Your 'Style' is a Trend";"That trendy outfit will be out of style next month. You're wasting your money."
-5;"Shopping is Not a Hobby";"You're spending all your free time here. Get a real hobby."
-5;"You're Not a Celebrity";"You're trying on clothes you saw a celebrity wear. You're not a celebrity."
-5;"Look at All That Waste";"That bag, that tissue paper, that box... it's all just going to end up in the trash."
-5;"Impulse Buying is a Sickness";"Your impulse to buy is a sickness. Seek help."
-5;"The 'Karen' of Retail";"You're the type to demand a discount because you're a 'loyal customer'."
-5;"You Don't Need That Mug";"You have a dozen mugs at home. You don't need another one."
-5;"Think About the Environment";"That fast fashion company uses unethical labor and pollutes the environment. Stop supporting them."
-5;"You're Getting Ripped Off";"That item is available online for half the price. You're getting ripped off."
-5;"Stop Wasting Your Money";"You're spending your money on things you'll regret. Put your wallet away."
-5;"Just Looking? Yeah Right.";"You say you're 'just looking,' but we both know you're going to buy something you don't need."
-5;"Another Unnecessary Purchase";"That's just another piece of useless junk to clutter your home."
-5;"Your Life is Not a Magazine";"You're trying to replicate a magazine cover with your purchases. Get a grip."
-5;"Go Home and Be Productive";"Stop wasting your day here. Go home and do something productive."
+1;Grocery Haul Alert;Do you REALLY need four bags of chips and a carton of ice cream? No. Put it back.
+1;Your Shopping Cart Is a Mess;That cart is a monument to consumerism. Do better for the planet, and for your waistline.
+1;Bulk Buying, Seriously?;Oh, you're getting the family-sized cereal. Is your 'family' just you on the couch?
+1;Another Plastic Bag?;I can SEE you have reusable bags in your car. Stop being lazy and save the turtles.
+1;Healthy Choices, Please;That's not produce; it's a bunch of processed junk. I’m judging you for your lack of self-control.
+1;Is That On Sale?;Just because it's on special doesn't mean you need it. You're falling for a marketing trap.
+1;Impulse Buy Warning;That chocolate bar at the checkout is a test. You are failing miserably.
+1;Frozen Food Aisle;Real food comes from the ground, not a freezer. Did your mother not teach you how to cook?
+1;Look at Your Basket;That basket is a disgrace. Think about where all that unnecessary stuff will end up: the landfill.
+1;Expensive Water Bottle;Why are you buying a $5 imported water bottle? Tap water is FREE. Wake up, sheeple.
+1;Are You a Hoarder?;Your cart looks like you're preparing for the apocalypse. Stop hoarding things you don't need.
+1;Don't Be a Food Waster;You're buying more food than you can possibly eat before it expires. That's a sin.
+1;Check Your Labels!;Can you even pronounce the ingredients on that snack? I bet you can't.
+1;Shopping for One?;That family-sized pizza for one is a cry for help. I'm just saying.
+1;The Self-Checkout Is Judging You;The machine knows you're buying too much junk. We all do.
+1;More Stuff, More Problems;The less you buy, the less you have to clean. It's a simple life hack you clearly haven't learned.
+1;Put Down That Soda;Do you even know how much sugar is in that drink? It's literally poison.
+1;You Don't Need All That;Take a look around. Everyone else is buying normal things. What's wrong with you?
+1;What Would Your Mom Say?;Your mother would be so disappointed with the junk food in your cart.
+1;Another Shopping Trip?;You were just here yesterday. Do you not have anything better to do with your life?
+2;So Trendy, So Wasteful;You're paying ten times the price for 'artisanal' carrots. It's just a root vegetable.
+2;Is That Ethical?;That expensive, handcrafted soap comes in a fancy paper bag. How much waste did it take to make that?
+2;Stop Gentrifying the Market;Don't ruin this place with your fancy tote bags and your organic kombucha.
+2;Look at Me, I Shop Local;Shopping 'local' is just an excuse to overspend on things you don't need.
+2;Is That a $20 Loaf of Bread?;A fool and their money are soon parted. Enjoy your overpriced carbs.
+2;Don't Block the Aisle;You and your friends are blocking the path with your endless chatter. Some of us have things to do.
+2;The Organic Lie;Do you really think that 'organic' kale is worth the price? It's a marketing scam.
+2;You Call This a Bargain?;You're bragging about getting a 'deal' on a $50 spice jar. That's not a deal.
+2;Are You a Tourist?;I can tell you're not from around here. You're taking pictures of vegetables, for goodness sake.
+2;More Is Not Better;Stop sampling everything. Just buy the cheese and get out of the way.
+2;The Pomegranate Problem;You don't know how to eat that, do you? Just put it down and walk away.
+2;Don't Be So Picky;You're squeezing every tomato. Just pick one and move on. You're ruining them for everyone else.
+2;That Reusable Bag Has Holes;I can see the crumbs coming out of your tote bag. That's not hygienic.
+2;Is Your Life a Social Media Post?;You're just here to take photos for your Instagram, aren't you? It's pathetic.
+2;The Juice is Not Worth the Squeeze;You're spending an hour picking out produce. It's not a religious pilgrimage.
+2;Put Down the Phone;The farmers' market is about community, not swiping through your phone.
+2;The 'Karen' of Markets;Oh, you're the type to complain that the free-range eggs aren't free-ranging enough.
+2;Is Your 'Artisan' Baguette Even Good?;You're paying for the story, not the flavor. I can tell.
+2;Buying Flowers You'll Let Die;You're buying those flowers just to let them wilt in a vase. It's a waste of life.
+2;Are You Getting Lost?;You've walked past the same stall three times. Just buy something or leave.
+3;Another Drill?;You already have a drill at home. You just want the new one with the bigger battery, don't you?
+3;DIY Disaster in Progress;That new saw is not going to make you a better carpenter. It's just going to sit in your garage.
+3;Bunnings Is Not a Playground;You're letting your kids run wild. This is a hardware store, not a daycare center.
+3;What Is That for?;You don't even know what that tool does. You're just buying it because it looks cool.
+3;Don't Start a Project You Won't Finish;That's a lot of lumber for a bookshelf you'll never actually build.
+3;Stop Looking, Start Working;You're just here to browse, aren't you? Go home and finish your project from last year.
+3;The 'Karen' of Power Tools;Oh, you're the one who needs the manager because the 'limited edition' hammer isn't limited enough.
+3;Your Shed Is Full of Junk;That new lawnmower is just going to join the graveyard of forgotten tools in your shed.
+3;Are You an Electrician?;That new multimeter is not going to magically make you one. Leave it to the professionals.
+3;Stop Wasting Paint;You don't need five different shades of white. You're just wasting money and resources.
+3;Another Unfinished Project?;That new workbench is just going to be another flat surface for you to put more junk on.
+3;Put Down That Expensive Tool;You're not even a professional. That expensive tool is wasted on you.
+3;You Don't Need It;That's a lot of screws for a project you don't have. Put them back.
+3;Why Are You So Loud?;Stop talking so loudly on your phone. Some of us are trying to shop.
+3;Return That, You Won't Use It;You know you're just going to return that in a week, right?
+3;Is Your Life Just Projects?;It seems like you have a new project every weekend. Just relax and enjoy your life.
+3;The 'DIY' Lie;You're not doing it yourself. You're just buying all the parts and paying someone else to assemble them.
+3;The 'Karen' of Home Improvement;You're the type of person to complain that the lumber isn't straight enough for your 'masterpiece'.
+3;Your Cart is a Disaster;That cart is overflowing with things you don't need. Stop hoarding.
+3;More Stuff, More Problems;Every new item you buy is another thing you have to find a place for in your cluttered home.
+4;McD sounds delicious? No!;DON'T EAT TOO MUCH FAST FOOD. IT'LL KILL YOU!!!!! Or, you want to die, then it's up to you.
+4;Your Burger is a Time Bomb;That burger is full of saturated fat and chemicals. It's literally a time bomb for your health.
+4;Another Soda?;You're just drinking liquid sugar. It's disgusting and unhealthy.
+4;Why Are You in a Drive-Thru?;You're sitting in a car to get food you'll eat in a car. Get out and walk somewhere.
+4;Don't Bring Your Kids Here;You're setting a terrible example for your children by feeding them this garbage.
+4;You Call This a Meal?;A bag of fried potatoes is not a meal. It's a tragedy.
+4;I See You, Fast Food Addict;I can see the regret in your eyes. It's not too late to turn back.
+4;Stop Wasting Your Money;You're spending your hard-earned cash on food that will make you sick. Is it worth it?
+4;That's Not Real Food;This isn't a kitchen. It's a science lab for creating addictive, unhealthy 'food'.
+4;The 'Karen' of Fast Food;Oh, you're the one who asks for no pickles and then complains about the lettuce.
+4;Your Body Is a Temple;Your body is a temple, and you're treating it like a garbage dump.
+4;What a Disgrace;You're sitting there eating this junk. It's a disgrace to healthy living.
+4;Don't Do It;Put down that greasy burger. It's not going to make you happy.
+4;Are You a Real Human?;You're eating a meal that's been made in two minutes. How is that even possible?
+4;You'll Regret This Later;You'll feel guilty about this meal later. Don't do it to yourself.
+4;Think About Your Heart;Every bite of that is another step closer to a heart attack.
+4;Fast Food Is a Scam;They're selling you cheap calories and pretending it's a real meal. Don't fall for it.
+4;Don't Be a Sheep;Everyone is eating this garbage. Don't be a sheep. Be better.
+4;Another Drive-Thru?;You were just here yesterday. Are you addicted?
+4;This is Not a Treat;This isn't a treat. This is a punishment for your body.
+5;Don't Buy That, It's Ugly;That fast fashion shirt is going to fall apart in one wash. Put it back.
+5;You Can't Afford That;I can see you looking at the price tag. You can't afford that, and you know it.
+5;Stop, You're Not an Influencer;You're taking pictures of clothes you can't afford. Stop pretending.
+5;The 'Karen' of Shopping;Oh, you're the one who needs to 'speak to a manager' because the sale price isn't low enough.
+5;More Debt, More Problems;Every item you buy is just another step toward debt. Think about your financial future.
+5;Do You Need More Shoes?;You have ten pairs of shoes at home. Put those back. You're a hoarder.
+5;Your 'Style' is a Trend;That trendy outfit will be out of style next month. You're wasting your money.
+5;Shopping is Not a Hobby;You're spending all your free time here. Get a real hobby.
+5;You're Not a Celebrity;You're trying on clothes you saw a celebrity wear. You're not a celebrity.
+5;Look at All That Waste;That bag, that tissue paper, that box... it's all just going to end up in the trash.
+5;Impulse Buying is a Sickness;Your impulse to buy is a sickness. Seek help.
+5;The 'Karen' of Retail;You're the type to demand a discount because you're a 'loyal customer'.
+5;You Don't Need That Mug;You have a dozen mugs at home. You don't need another one.
+5;Think About the Environment;That fast fashion company uses unethical labor and pollutes the environment. Stop supporting them.
+5;You're Getting Ripped Off;That item is available online for half the price. You're getting ripped off.
+5;Stop Wasting Your Money;You're spending your money on things you'll regret. Put your wallet away.
+5;Just Looking? Yeah Right.;You say you're 'just looking,' but we both know you're going to buy something you don't need.
+5;Another Unnecessary Purchase;That's just another piece of useless junk to clutter your home.
+5;Your Life is Not a Magazine;You're trying to replicate a magazine cover with your purchases. Get a grip.
+5;Go Home and Be Productive;Stop wasting your day here. Go home and do something productive.
+1;Oh wow;Another supermarket trip? Didn’t you just hoard last week?
+1;Déjà vu;Your fridge called—it’s already full of forgotten veggies.
+1;Impulse alert;That “special discount” is just a trap, honey.
+1;Eco who?;Plastic bags love you more than your wallet does.
+1;Savior complex;Buying bottled water like your tap is broken?
+1;Math fail;Two-for-one isn’t saving if you don’t need one.
+1;Rotting soon;Remember last week’s lettuce funeral?
+1;Overflow;Cupboards can’t handle another round of “just in case.”
+1;Budget hole;Grocery hauls aren’t therapy sessions.
+1;Apocalypse prep;Stocking like the world ends tomorrow, huh?
+1;Sustainability fail;Every plastic wrap is a vote against the planet.
+1;Wasted plan;Meal prep doesn’t work if you never cook.
+1;Guilt trip;How’s that treadmill feeling about your snack aisle detour?
+1;Lonely bananas;They’re tired of being abandoned on the counter.
+1;Fake need;Cravings are not necessities.
+1;Regret incoming;Future-you will hate present-you’s checkout bill.
+1;Pantry wars;Your shelves are plotting a rebellion.
+1;Trash forecast;Half of this cart is tomorrow’s landfill.
+1;Greenwash alert;“Organic” doesn’t cancel food waste, darling.
+1;Mock deal;Spending $50 to “save” $5—classic move.
+2;Here we go;The market again? Didn’t last week’s haul rot?
+2;Nose knows;Smells great, tastes forgotten in your fridge.
+2;Impulse central;Street snacks: 5 minutes of joy, 5 days of guilt.
+2;Plastic party;Every bag here lives longer than you do.
+2;Overbuyer vibes;You don’t need three kilos of onions, trust me.
+2;Math illusion;Cheap isn’t cheap if it goes straight to the bin.
+2;Rotting reality;Your compost pile is laughing already.
+2;Crowd logic;Buying because “everyone else is”—genius.
+2;Vendor smile;They know you’ll regret this purchase by Thursday.
+2;Broken plan;Meal planning lasted exactly one market visit.
+2;Diet drama;Fruits don’t cancel your fried binge, darling.
+2;Wallet scream;Loose cash disappears faster here than anywhere.
+2;Bulk mistake;Quantity ≠ necessity.
+2;Spoiled alert;Fresh today, garbage tomorrow.
+2;Plastic rain;You’re personally funding microplastic beaches.
+2;Zero plan;Shopping hungry again? Rookie move.
+2;Luggage life;How do you even carry all this nonsense home?
+2;Waste math;20% eaten, 80% forgotten. Impressive stats.
+2;Earth sigh;Markets used to mean community, now they mean waste.
+2;Mock cheer;Congrats, you bought enough for a family of ten.
+3;DIY disaster;Another tool you’ll use once, then forget?
+3;Garage graveyard;Your drill has trust issues already.
+3;Overkill;Buying pro gear for a single screw—legendary.
+3;Rust buddies;Half your toolbox is just metal art now.
+3;Money pit;That “one-time fix” cost could’ve paid rent.
+3;Shelf filler;Hardware aisles love dreamers, not doers.
+3;Pretend engineer;YouTube DIY confidence lasts 5 minutes.
+3;Oops again;Another tape measure? That’s number four.
+3;Project fail;Remember the “garden project” graveyard?
+3;Mock fix;Buying screws won’t fix your commitment issues.
+3;Dust collectors;Tools don’t work if you don’t.
+3;Budget breaker;Every “small fix” screams big spend.
+3;Mess maker;New hammer, same unfinished wall.
+3;Power trip;Cordless tools, but you’re still powerless.
+3;Wannabe pro;Your tool belt is cosplay at this point.
+3;Wasted wood;That timber is tomorrow’s bonfire.
+3;Repeat sins;Same aisle, same mistakes, new receipts.
+3;Eco irony;“Sustainable wood” for a project that never finishes.
+3;Mock applause;Congrats, you just bought more clutter.
+3;Garage Tetris;Hope you like playing with unopened boxes.
+4;Fast fail;Another burger? Congrats on killing your gym gains.
+4;Grease life;Heart arteries just RSVP’d “blocked.”
+4;Eco disaster;That wrapper outlives you, and your kid’s kid.
+4;Mock gourmet;Fries again? Bold move, chef.
+4;Snack shame;Meal or regret? Both, probably.
+4;Drive-thru drama;Convenience tax: money gone, health gone.
+4;Repeat offender;Didn’t you swear “last time” yesterday?
+4;Nap trap;Meal combo = instant coma.
+4;Guilt combo;Calories with a side of regret.
+4;Plastic storm;One meal, five wrappers, zero brains.
+4;Energy crash;Grease high, motivation low.
+4;Fast fashion of food;Trendy, cheap, unsustainable.
+4;Mock health;Salad on the side won’t save you.
+4;Wallet drain;Your money disappears faster than fries.
+4;Habit loop;Drive-thru is your second home now.
+4;Climate cry;Factory-farmed meal, climate-priced guilt.
+4;Mock choice;Would you like regret medium or large?
+4;Late-night shame;Nothing good ever happens after midnight menus.
+4;Body betrayal;Your stomach is filing complaints.
+4;Congrats;Another notch on your regret belt.
+5;Mall madness;Didn’t you promise “just window shopping”?
+5;Shop trap;Malls are casinos with prettier lights.
+5;Impulse walk;Exercise? More like cardio for your wallet.
+5;Brand bait;Every sale screams: buy trash you don’t need.
+5;Overload;Your closet can’t handle another impulse.
+5;Mock chic;Fashion expires, landfills don’t.
+5;Bag parade;Walking landfill generator in action.
+5;Budget ghost;Your bank balance evaporated instantly.
+5;Plastic wrap;All this packaging, none of it recyclable.
+5;Mock joy;Shopping happiness lasts shorter than bubble wrap.
+5;Consumer clone;Congrats, you’re a marketing statistic.
+5;Sustainability who;Every receipt is a carbon receipt.
+5;Space fail;Your house is not a storage unit.
+5;Debt drama;Credit cards cry louder than you do.
+5;Mock minimalism;You own more “essentials” than a village.
+5;Retail trap;Every discount steals your future plans.
+5;Wardrobe waste;Half your closet still has tags.
+5;Carbon couture;That “new season” is planet’s old problem.
+5;Mock regret;Tomorrow’s you will hate today’s mall trip.
+5;Congrats;You just bought landfill in a bag.
