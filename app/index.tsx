@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { View, Text, Button, StyleSheet, Platform } from "react-native";
 import * as Location from "expo-location";
 import * as TaskManager from "expo-task-manager";
@@ -126,7 +126,6 @@ export const loadNotifications = async () => {
         body: row.body,
       });
     });
-    console.log("Notifications loaded:", AREAS_NOTIFICATIONS);
   } catch (error) {
     console.error("Failed to load notifications CSV:", error);
   }
@@ -138,6 +137,8 @@ export default function Page() {
   const [hasPermission, setHasPermission] = useState<boolean | null>(null);
   const [location, setLocation] = useState<Location.LocationObject | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [currentArea, setCurrentArea] = useState<string>("Outside all areas");
+  const prevAreaRef = useRef<string>("Outside all areas");
 
   useEffect(() => {
     loadNotifications();
@@ -192,7 +193,42 @@ export default function Page() {
     const subscribe = async () => {
       subscription = await Location.watchPositionAsync(
         { accuracy: Location.Accuracy.Highest, distanceInterval: 0 },
-        (loc) => setLocation(loc)
+        async (loc) => {
+          setLocation(loc);
+
+          // Determine which area user is in
+          let areaFound = "Outside all areas";
+          let areaIdFound: number | null = null;
+
+          AREAS.forEach((area) => {
+            const inside = area.boxes.some(
+              (box) =>
+                loc.coords.latitude >= box.minLat &&
+                loc.coords.latitude <= box.maxLat &&
+                loc.coords.longitude >= box.minLon &&
+                loc.coords.longitude <= box.maxLon
+            );
+            if (inside) {
+              areaFound = `Inside Area ${area.id}`;
+              areaIdFound = area.id;
+            }
+          });
+
+          setCurrentArea(areaFound);
+
+          // Fire debug notification if entering a new area
+          if (areaFound !== prevAreaRef.current && areaIdFound !== null) {
+            await Notifications.scheduleNotificationAsync({
+              content: {
+                title: `DEBUG: Entered Area ${areaIdFound}`,
+                body: "This is a test notification.\n\nConsume responsibly please",
+              },
+              trigger: null,
+            });
+          }
+
+          prevAreaRef.current = areaFound;
+        }
       );
     };
 
@@ -209,10 +245,13 @@ export default function Page() {
         <>
           <Text style={styles.text}>Location tracking active:</Text>
           {location ? (
-            <Text style={styles.text}>
-              Lat: {location.coords.latitude.toFixed(6)}, Lon:{" "}
-              {location.coords.longitude.toFixed(6)}
-            </Text>
+            <>
+              <Text style={styles.text}>
+                Lat: {location.coords.latitude.toFixed(6)}, Lon:{" "}
+                {location.coords.longitude.toFixed(6)}
+              </Text>
+              <Text style={styles.text}>{currentArea}</Text>
+            </>
           ) : (
             <Text style={styles.text}>Getting location...</Text>
           )}
