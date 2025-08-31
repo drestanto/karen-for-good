@@ -193,12 +193,11 @@ export default function Page() {
     const subscribe = async () => {
       subscription = await Location.watchPositionAsync(
         { accuracy: Location.Accuracy.Highest, distanceInterval: 0 },
-        async (loc) => {
+        (loc) => {
           setLocation(loc);
 
           // Determine which area user is in
           let areaFound = "Outside all areas";
-          let areaIdFound: number | null = null;
 
           AREAS.forEach((area) => {
             const inside = area.boxes.some(
@@ -210,24 +209,10 @@ export default function Page() {
             );
             if (inside) {
               areaFound = `Inside Area ${area.id}`;
-              areaIdFound = area.id;
             }
           });
 
           setCurrentArea(areaFound);
-
-          // Fire debug notification if entering a new area
-          if (areaFound !== prevAreaRef.current && areaIdFound !== null) {
-            await Notifications.scheduleNotificationAsync({
-              content: {
-                title: `DEBUG: Entered Area ${areaIdFound}`,
-                body: "This is a test notification.\n\nConsume responsibly please",
-              },
-              trigger: null,
-            });
-          }
-
-          prevAreaRef.current = areaFound;
         }
       );
     };
