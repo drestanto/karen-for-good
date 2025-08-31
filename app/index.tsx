@@ -10,23 +10,90 @@ const LOCATION_TASK_NAME = "background-location-task";
 
 // ------------------------------
 // AREA BOXES (static, editable in code)
+// Catatan: Koordinat ini dipilih berdasarkan lokasi toko yang paling sering dikunjungi
+// dan terletak di sekitar University of Melbourne atau area CBD yang berdekatan.
+
+// 1. Supermarket
 export const AREA_1_BOXES = [
-  { minLat: -37.8100, maxLat: -37.8080, minLon: 144.9500, maxLon: 144.9520 },
-  { minLat: -37.8085, maxLat: -37.8075, minLon: 144.9510, maxLon: 144.9530 },
+  // Coles, Melbourne Central (sangat dekat dengan kampus)
+  { minLat: -37.8105, maxLat: -37.8095, minLon: 144.9620, maxLon: 144.9630 },
+  // Coles, Franklin St
+  { minLat: -37.8070, maxLat: -37.8060, minLon: 144.9620, maxLon: 144.9630 },
+  // Coles, Lygon St, Carlton
+  { minLat: -37.8010, maxLat: -37.8000, minLon: 144.9660, maxLon: 144.9670 },
+
+  // Woolworths, Swanston St (QV building)
+  { minLat: -37.8115, maxLat: -37.8105, minLon: 144.9650, maxLon: 144.9660 },
+  // Woolworths, Elizabeth St
+  { minLat: -37.8130, maxLat: -37.8120, minLon: 144.9625, maxLon: 144.9635 },
+  // Woolworths, Victoria St, Carlton
+  { minLat: -37.8040, maxLat: -37.8030, minLon: 144.9670, maxLon: 144.9680 },
+
+  // Aldi, Swanston St
+  { minLat: -37.8170, maxLat: -37.8160, minLon: 144.9660, maxLon: 144.9670 },
+  // Aldi, La Trobe St
+  { minLat: -37.8100, maxLat: -37.8090, minLon: 144.9560, maxLon: 144.9570 },
 ];
+
+// 2. Pasar (Regular Markets)
 export const AREA_2_BOXES = [
-  { minLat: -37.8070, maxLat: -37.8050, minLon: 144.9550, maxLon: 144.9570 },
-  { minLat: -37.8065, maxLat: -37.8055, minLon: 144.9560, maxLon: 144.9580 },
+  // Queen Victoria Market
+  { minLat: -37.8090, maxLat: -37.8050, minLon: 144.9540, maxLon: 144.9590 },
+  // South Melbourne Market
+  { minLat: -37.8320, maxLat: -37.8300, minLon: 144.9570, maxLon: 144.9590 },
+  // Footscray Market
+  { minLat: -37.8020, maxLat: -37.8000, minLon: 144.8960, maxLon: 144.8980 },
+  // Coburg Market
+  { minLat: -37.7470, maxLat: -37.7450, minLon: 144.9640, maxLon: 144.9660 },
 ];
+
+// 3. Toko Alat dan Perlengkapan Rumah
 export const AREA_3_BOXES = [
-  { minLat: -37.8120, maxLat: -37.8110, minLon: 144.9520, maxLon: 144.9540 },
-  { minLat: -37.8115, maxLat: -37.8105, minLon: 144.9530, maxLon: 144.9550 },
+  // Bunnings Warehouse, Carlton
+  { minLat: -37.7970, maxLat: -37.7960, minLon: 144.9640, maxLon: 144.9650 },
+  // Bunnings Warehouse, Port Melbourne
+  { minLat: -37.8370, maxLat: -37.8350, minLon: 144.9280, maxLon: 144.9300 },
+
+  // Officeworks, Russell St
+  { minLat: -37.8140, maxLat: -37.8130, minLon: 144.9675, maxLon: 144.9685 },
+  // Officeworks, La Trobe St
+  { minLat: -37.8100, maxLat: -37.8090, minLon: 144.9580, maxLon: 144.9590 },
+  
+  // JB Hi-Fi, Elizabeth St
+  { minLat: -37.8120, maxLat: -37.8110, minLon: 144.9610, maxLon: 144.9620 },
 ];
+
+// 4. Makanan Cepat Saji (Fast Food)
 export const AREA_4_BOXES = [
-  { minLat: -37.8080, maxLat: -37.8075, minLon: 144.9580, maxLon: 144.9590 },
+  // McDonald's, Swanston St
+  { minLat: -37.8100, maxLat: -37.8090, minLon: 144.9630, maxLon: 144.9640 },
+  // McDonald's, Bourke St
+  { minLat: -37.8145, maxLat: -37.8135, minLon: 144.9635, maxLon: 144.9645 },
+
+  // Hungry Jack's, Swanston St
+  { minLat: -37.8160, maxLat: -37.8150, minLon: 144.9650, maxLon: 144.9660 },
+  // Hungry Jack's, Elizabeth St
+  { minLat: -37.8150, maxLat: -37.8140, minLon: 144.9615, maxLon: 144.9625 },
+
+  // KFC, Swanston St
+  { minLat: -37.8130, maxLat: -37.8120, minLon: 144.9655, maxLon: 144.9665 },
+  // KFC, Elizabeth St
+  { minLat: -37.8148, maxLat: -37.8138, minLon: 144.9628, maxLon: 144.9638 },
+
+  // Domino's Pizza, Swanston St
+  { minLat: -37.8130, maxLat: -37.8120, minLon: 144.9660, maxLon: 144.9670 },
+  // Domino's Pizza, Lygon St
+  { minLat: -37.8015, maxLat: -37.8005, minLon: 144.9640, maxLon: 144.9650 },
 ];
+
+// 5. Pusat Perbelanjaan (Shopping Centre)
 export const AREA_5_BOXES = [
-  { minLat: -37.8060, maxLat: -37.8055, minLon: 144.9600, maxLon: 144.9610 },
+  // Melbourne Central & Emporium (berdekatan dan terhubung)
+  { minLat: -37.8110, maxLat: -37.8090, minLon: 144.9620, maxLon: 144.9640 },
+  // Bourke Street Mall
+  { minLat: -37.8150, maxLat: -37.8130, minLon: 144.9630, maxLon: 144.9650 },
+  // DFO South Wharf
+  { minLat: -37.8250, maxLat: -37.8230, minLon: 144.9520, maxLon: 144.9540 },
 ];
 
 // Areas array
