@@ -15,58 +15,59 @@ export const AREA_1_BOXES = [
   { minLat: -37.8100, maxLat: -37.8080, minLon: 144.9500, maxLon: 144.9520 },
   { minLat: -37.8085, maxLat: -37.8075, minLon: 144.9510, maxLon: 144.9530 },
 ];
-export const AREA_1_NOTIFICATION = {
-  title: "You're here 1",
-  body: "Lorem 1 ipsum blah",
-};
+export const AREA_1_NOTIFICATIONS = [
+  { title: "You're here 1", body: "Lorem 1 ipsum blah" },
+  { title: "Hello from area 1", body: "Another notification text" },
+  { title: "Welcome!", body: "You reached area 1" },
+  // add up to 20
+];
 
 // AREA 2
 export const AREA_2_BOXES = [
   { minLat: -37.8070, maxLat: -37.8050, minLon: 144.9550, maxLon: 144.9570 },
   { minLat: -37.8065, maxLat: -37.8055, minLon: 144.9560, maxLon: 144.9580 },
 ];
-export const AREA_2_NOTIFICATION = {
-  title: "You're here 2",
-  body: "Lorem 2 ipsum blah",
-};
+export const AREA_2_NOTIFICATIONS = [
+  { title: "You're here 2", body: "Lorem 2 ipsum blah" },
+  { title: "Area 2 greeting", body: "Another text for area 2" },
+  // ... up to 20
+];
 
 // AREA 3
 export const AREA_3_BOXES = [
   { minLat: -37.8120, maxLat: -37.8110, minLon: 144.9520, maxLon: 144.9540 },
   { minLat: -37.8115, maxLat: -37.8105, minLon: 144.9530, maxLon: 144.9550 },
 ];
-export const AREA_3_NOTIFICATION = {
-  title: "You're here 3",
-  body: "Lorem 3 ipsum blah",
-};
+export const AREA_3_NOTIFICATIONS = [
+  { title: "You're here 3", body: "Lorem 3 ipsum blah" },
+  // ... up to 20
+];
 
 // AREA 4
 export const AREA_4_BOXES = [
   { minLat: -37.8080, maxLat: -37.8075, minLon: 144.9580, maxLon: 144.9590 },
 ];
-export const AREA_4_NOTIFICATION = {
-  title: "You're here 4",
-  body: "Lorem 4 ipsum blah",
-};
+export const AREA_4_NOTIFICATIONS = [
+  { title: "You're here 4", body: "Lorem 4 ipsum blah" },
+];
 
 // AREA 5
 export const AREA_5_BOXES = [
   { minLat: -37.8060, maxLat: -37.8055, minLon: 144.9600, maxLon: 144.9610 },
 ];
-export const AREA_5_NOTIFICATION = {
-  title: "You're here 5",
-  body: "Lorem 5 ipsum blah",
-};
+export const AREA_5_NOTIFICATIONS = [
+  { title: "You're here 5", body: "Lorem 5 ipsum blah" },
+];
 
 // ------------------------------
 // AREAS ARRAY
 // ------------------------------
 const AREAS = [
-  { boxes: AREA_1_BOXES, notification: AREA_1_NOTIFICATION },
-  { boxes: AREA_2_BOXES, notification: AREA_2_NOTIFICATION },
-  { boxes: AREA_3_BOXES, notification: AREA_3_NOTIFICATION },
-  { boxes: AREA_4_BOXES, notification: AREA_4_NOTIFICATION },
-  { boxes: AREA_5_BOXES, notification: AREA_5_NOTIFICATION },
+  { boxes: AREA_1_BOXES, notifications: AREA_1_NOTIFICATIONS },
+  { boxes: AREA_2_BOXES, notifications: AREA_2_NOTIFICATIONS },
+  { boxes: AREA_3_BOXES, notifications: AREA_3_NOTIFICATIONS },
+  { boxes: AREA_4_BOXES, notifications: AREA_4_NOTIFICATIONS },
+  { boxes: AREA_5_BOXES, notifications: AREA_5_NOTIFICATIONS },
 ];
 
 const hasNotifiedArr = new Array(AREAS.length).fill(false);
@@ -194,10 +195,16 @@ TaskManager.defineTask(LOCATION_TASK_NAME, async ({ data, error }) => {
     );
 
     if (inside && !hasNotifiedArr[i]) {
+      // Pick a random notification
+      const notifList = area.notifications;
+      const randomIndex = Math.floor(Math.random() * notifList.length);
+      const randomNotif = notifList[randomIndex];
+
       Notifications.scheduleNotificationAsync({
-        content: { title: area.notification.title, body: area.notification.body },
+        content: { title: randomNotif.title, body: randomNotif.body },
         trigger: null,
       });
+
       hasNotifiedArr[i] = true;
     } else if (!inside) {
       hasNotifiedArr[i] = false; // reset when leaving all boxes of the area
