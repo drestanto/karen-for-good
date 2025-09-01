@@ -193,11 +193,12 @@ export default function Page() {
     const subscribe = async () => {
       subscription = await Location.watchPositionAsync(
         { accuracy: Location.Accuracy.Highest, distanceInterval: 0 },
-        (loc) => {
+        async (loc) => {
           setLocation(loc);
 
           // Determine which area user is in
           let areaFound = "Outside all areas";
+          let areaIdFound: number | null = null;
 
           AREAS.forEach((area) => {
             const inside = area.boxes.some(
@@ -209,10 +210,27 @@ export default function Page() {
             );
             if (inside) {
               areaFound = `Inside Area ${area.id}`;
+              areaIdFound = area.id;
             }
           });
 
           setCurrentArea(areaFound);
+
+          // Fire notification if entering a new area
+          if (areaFound !== prevAreaRef.current && areaIdFound !== null) {
+            const notifications = AREAS_NOTIFICATIONS[areaIdFound] || [];
+            const randomIndex = Math.floor(Math.random() * notifications.length);
+            const notif = notifications[randomIndex];
+            await Notifications.scheduleNotificationAsync({
+              content: { 
+                title: notif.title, 
+                body: `${notif.body}\n\nConsume responsibly please` 
+              },
+              trigger: null,
+            });
+          }
+
+          prevAreaRef.current = areaFound;
         }
       );
     };
@@ -257,41 +275,4 @@ export default function Page() {
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#fff", padding: 16 },
   text: { fontSize: 18, textAlign: "center", marginBottom: 16 },
-});
-
-// ------------------------------
-// Background task
-TaskManager.defineTask(LOCATION_TASK_NAME, async ({ data, error }) => {
-  if (error || !data) return;
-
-  const { locations } = data as any;
-  const loc = locations[0];
-
-  AREAS.forEach((area, i) => {
-    const inside = area.boxes.some(
-      (box) =>
-        loc.coords.latitude >= box.minLat &&
-        loc.coords.latitude <= box.maxLat &&
-        loc.coords.longitude >= box.minLon &&
-        loc.coords.longitude <= box.maxLon
-    );
-
-    if (inside && !hasNotifiedArr[i]) {
-      const notifications = AREAS_NOTIFICATIONS[area.id] || [];
-      if (notifications.length > 0) {
-        const randomIndex = Math.floor(Math.random() * notifications.length);
-        const notif = notifications[randomIndex];
-        Notifications.scheduleNotificationAsync({
-          content: { 
-            title: notif.title, 
-            body: `${notif.body}\n\nConsume responsibly please` 
-          },
-          trigger: null,
-        });
-      }
-      hasNotifiedArr[i] = true;
-    } else if (!inside) {
-      hasNotifiedArr[i] = false; // reset when leaving area
-    }
-  });
 });

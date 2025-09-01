@@ -2,7 +2,7 @@
   "expo": {
     "name": "karen-for-good",
     "slug": "karen-for-good",
-    "version": "1.4.0",
+    "version": "1.6.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "karenforgood",
@@ -22,7 +22,7 @@
       "permissions": [
         "ACCESS_FINE_LOCATION",
         "ACCESS_BACKGROUND_LOCATION",
-        "POST_NOTIFICATIONS"  // optional for Android 13+
+        "POST_NOTIFICATIONS"
       ],
       "package": "com.drestanto.karenforgood"
     },
@@ -49,8 +49,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "030ebfaf-05bb-457f-8161-54a682ed2ff1"
+        "projectId": "c884ed78-c3ce-46ce-8d38-81c51d8decea"
       }
-    }
+    },
+    "owner": "dyasputro"
   }
 }
